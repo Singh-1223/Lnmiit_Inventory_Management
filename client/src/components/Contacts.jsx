@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import DevTeam from './DevTeam';
+
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdMessage } from "react-icons/md";

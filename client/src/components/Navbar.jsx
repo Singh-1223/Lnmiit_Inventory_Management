@@ -32,7 +32,8 @@ const Navbar = () => {
       style={{ fontFamily: "Roboto, sans-serif", zIndex: "100" }}
     >
       <Link to={`${path}`} className="text-white text-3xl font-extrabold">
-        <img src={logo} alt="LOGO" className="h-14 w-60" />
+        {/* <img src={logo} alt="LOGO" className="h-14 w-60" /> */}
+        <h1 className="pt-3 pl-3 text-stone-300">Well Goods</h1>
       </Link>
 
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
@@ -57,7 +58,7 @@ const Navbar = () => {
         </li>
         <li className="p-3 rounded-[6px]">
           <NavLink to="/Contact" onClick={() => setMenuOpen(false)}>
-            Contacts
+            Contact Us
           </NavLink>
         </li>
 

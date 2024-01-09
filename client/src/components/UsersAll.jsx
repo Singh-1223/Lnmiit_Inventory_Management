@@ -21,11 +21,13 @@ const UsersAll = () => {
     // Fetch user data when the component mounts
     fetchUsers();
   }, []);
-   useEffect(()=>{
+
+  useEffect(()=>{
     
     fetchUsers()
     setRefresh(false)
    },[refresh])
+
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (modalVisible && e.target.classList.contains('modal-wrapper')) {
