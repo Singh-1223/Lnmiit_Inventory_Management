@@ -11,7 +11,13 @@ const app = express();
 const port = 5050;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin:['https://wellgoods.vercel.app'],
+        methods:['POST','GET'],
+        credentials:true
+    }
+));
 app.use(bodyParser.json()); // Make sure this line is present
 
 //Available Routes
