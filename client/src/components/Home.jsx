@@ -32,7 +32,7 @@ const Home = () => {
     
       </Stack>
       {/* <Footer/> */}
-      <div className='border-2 border-red-400 mt-[-15] text-center'>
+      <div className='border-2  mt-[-15] text-center'>
            <span className='font-bold'>NOTE : For testing purpose , LOGIN as USER with</span>
             <p> 
                <div>Username: <span className='font-bold text-red-500'>testuser</span> </div>
