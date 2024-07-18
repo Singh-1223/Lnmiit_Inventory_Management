@@ -10,10 +10,11 @@ connectToMongo();
 const app = express();
 const port = 5050;
 
+app.use(cors());
 app.use(express.json());
 app.use(cors(
     {
-        origin:['https://wellgoods.vercel.app'],
+        origin:['https://wellgoods.vercel.app','http://localhost:5173/'],
         methods:['POST','GET'],
         credentials:true
     }
